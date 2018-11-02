@@ -11,7 +11,7 @@ spring:
      name: eureka-7002
 eureka:
   instance:
-    hostname: wcsg1   #eureka服务端地址
+    hostname: wcsg2   #eureka服务端地址
   client:
     registerWithEureka: false     #false表示不向注册中心
     fetchRegistry: false           #false表示自己端就是注册中心，职责就是维护服务实例不需要检索服务
@@ -29,7 +29,7 @@ spring:
      name: eureka-7002
 eureka:
   instance:
-    hostname: wcsg1   #eureka服务端地址
+    hostname: wcsg2   #eureka服务端地址
   client:
     registerWithEureka: false     #false表示不向注册中心
     fetchRegistry: false           #false表示自己端就是注册中心，职责就是维护服务实例不需要检索服务
