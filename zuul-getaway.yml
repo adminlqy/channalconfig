@@ -1,0 +1,29 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: channal-gateway
+
+eureka:
+ client:
+    serviceUrl:
+      defaultZone: http://wcsg1:7001/eureka,http://wcsg2:7002/eureka
+    instance:
+      instance-id: gateway.com   #自定义gateway服务名称  此处需在hosts配置
+      prefer-ip-address: true   #显示地址ip
+
+#隐藏真实微服务名称 做安全保护机制
+zuul:
+  prefix: /web
+  ignored-services: "*"   #microsevicecloud-user 禁用原服务名称路劲，*表示禁用所有
+  routes:
+   # mydept.serviceId: microsevicecloud-user     #将要隐藏的微服务名称
+    mydept.path: /xyq/**  #microsevicecloud-user对外代理的名称
+
+#配置info信息
+info:
+    app.name: wcsg-springcloud
+    company.name: www.wcsg.com
+    build.artifactId: $project.artifactId$
+    build.version: $project.version$
