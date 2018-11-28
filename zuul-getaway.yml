@@ -18,7 +18,7 @@ zuul:
   #prefix: /web
   ignored-services: "*"   #microsevicecloud-user 禁用原服务名称路劲，*表示禁用所有
   routes:
-    mydept.serviceId: Channal-Consumer     #将要隐藏的微服务名称
+    mydept.serviceId: Channal-SpreadUserMsg     #将要隐藏的微服务名称
     mydept.path: /xyq/**  #microsevicecloud-user对外代理的名称
 
 #配置info信息
