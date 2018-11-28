@@ -33,7 +33,7 @@ eureka:
     serviceUrl:
       defaultZone: http://wcsg1:7001/eureka,http://wcsg2:7002/eureka
     instance:
-      instance-id: Channal-SpreadUserMsg   #自定义hystrix服务名称
+      instance-id: Channal-SpreadUserMsg11   #自定义hystrix服务名称
       prefer-ip-address: true   #显示地址ip
 
 #服务监控
