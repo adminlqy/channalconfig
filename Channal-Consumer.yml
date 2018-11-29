@@ -1,11 +1,18 @@
 ﻿server:
   port: 80
 
+spring:
+  application:
+    name: Channal-Consumer
+    
 feign:
   hystrix:
     enabled: true
-
+    
 eureka:
-  client:
+ client:
     serviceUrl:
-        defaultZone: http://wcsg2:7002/eureka/,http://wcsg1:7001/eureka/
+      defaultZone: http://wcsg1:7001/eureka,http://wcsg2:7002/eureka
+    instance:
+      instance-id: Channal-Consumer   #自定义hystrix服务名称
+      prefer-ip-address: true   #显示地址ip
