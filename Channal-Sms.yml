@@ -5,7 +5,7 @@
 ---
 
 server:
-  port: 8001
+  port: 8002
 
 mybatis:
   type-aliases-package: com.xyq.springcloud.entity        #实体别名
@@ -55,7 +55,7 @@ info:
 ---
 
 server:
-  port: 8001
+  port: 8002
 
 mybatis:
   type-aliases-package: com.xyq.springcloud.entity        #实体别名
